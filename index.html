@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Turismo reponsive website build using HTML5, CSS3 and Javascript. The complete layout of the page is build using grid layout and flexbox with some cool animations"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/willana-logo.jpg" />
+    <link rel="stylesheet" href="font/stylesheet.css" media="screen" />
+    <link rel="stylesheet" href="css/style.css" media="screen" />
+    <title>Willana - Explore the world</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <div class="navigation">
+          <a href="">
+            <div class="logo">
+              <img src="img/logo-willana.png" alt="logotipo" width="100" height="50">
+            </div>
+          </a>
+          <img
+            src="img/nav-icon.svg"
+            class="nav-icon"
+            alt="navigation icon"
+            width="30"
+            height="30"
+            onclick="toggleMenu()"
+          />
+          <ul class="nav-list">
+            <li>
+              <a href="#home"> Home </a>
+            </li>
+            <li>
+              <a href="#about"> About </a>
+            </li>
+            <li>
+              <a href="#tours"> Tours </a>
+            </li>
+            <li>
+              <a href="rent_a_car.html"> Rent a Car </a>
+            </li>
+            <li>
+              <button class="btn" onclick="toggleDropdown()">Book Now</button>
+              <div class="dropdown">
+                <label>
+                  <input type="radio" name="booking-option" value="whatsapp">
+                  WhatsApp
+                </label>
+                <label>
+                  <input type="radio" name="booking-option" value="instagram">
+                  Instagram
+                </label>
+                <label>
+                  <input type="radio" name="booking-option" value="form">
+                  Form
+                </label>
+                <button class="btn" onclick="redirectUser()">OK</button>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </header>
+    
+
+    <main>
+      <!-- SECTION HERO -->
+      <section class="section-hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="heading heading--1 margin-bottom">
+              life is short and world is wide the sooner you start exploring it
+              the better
+            </h1>
+            <button class="btn"><a href="#tours" style="text-decoration: none; color:black;">Explore now</a></button>
+          </div>
+        </div>
+      </section>
+      <!--
+       SECTION SEARCH 
+      <section class="section-search">
+        <div class="container search-box">
+          <div class="wrapper">
+            <h3>Destination</h3>
+            <div class="custom-select">
+              <select>
+                <option value="england">England</option>
+                <option value="france">France</option>
+                <option value="italy">Italy</option>
+                <option value="india">India</option>
+                <option value="india">Spain</option>
+                <option value="maldives">Maldives</option>
+              </select>
+              <span class="arrow"></span>
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <h3>Date</h3>
+            <div class="custom-date">
+              <input type="date" id="date" />
+              <img src="./img/calendar.svg" alt="" class="calender-icon" />
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <h3>Average Price</h3>
+            <div class="custom-select">
+              <select>
+                <option value="$200">$200 - $500</option>
+                <option value="$500">$500 - $1000</option>
+                <option value="$1000">$1000 - $2000</option>
+              </select>
+              <span class="arrow"></span>
+            </div>
+          </div>
+          <button class="btn">Search</button>
+        </div>
+      </section>
+      -->
+      
+      <!-- SECTION ABOUT -->
+      <section class="section-about" id="about">
+        <div class="container about-box" data-aos="fade-up">
+          <div class="about-box__heading">
+            <h3 class="color-blue margin-bottom">About us</h3>
+            <div class="heading heading--1 capitalize">
+              Explore the most corners of Mozambique, Africa and the world with us
+            </div>
+          </div>
+          <div class="about-box__content">
+            <p class="margin-bottom" style="text-align: justify;">
+              Welcome to Willana Accommodations and Tourism. We are a tourism agency dedicated to creating unforgettable experiences. We offer tourist tours, personalized excursions, transport services, accommodation. Our activities include boat trips, motorbikes, diving with dolphins. We also organize beach weddings, special events and travel packages for medical appointments.
+            </p>
+            
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="marquee">
+          <a href="rent_a_car.html"><span>Rent a car with Willana!</span></a>
+        </div>
+      </section>
+
+      <!-- SECTION TOURS -->
+      <section class="section-tours" id="tours">
+        <div class="container tour-box" data-aos="fade-up">
+          <header class="tour-box__heading">
+            <h2 class="heading heading--2 color-blue margin-bottom">
+              our top tours
+            </h2>
+            <p>
+              In this section we offer complete personalized packages, which involve tours of the best destinations in the place to be visited, transportation, accommodation, meals, activities and more according to the descriptions of each package and destination.
+            </p>
+          </header>
+
+          <article class="tour-box__cards">
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <img
+                src="img/kruger park.jpg"
+                alt="kruger-park"
+                width="500"
+                height="500"
+                class="t-card__img"
+                id="kruger"
+              />
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">Kruger Park SA</h3>
+                  
+                </div>
+
+                <div class="t-card__description">
+                  
+                  🦁 Safari Kruger Park S.A <br>
+                  🚌 Return Transportation <br>
+                  🚗 Two Thrilling Safaris <br>
+                  🍿 Snack Break in the Park <br>
+                  🏨 Accommodation 1 Night <br>
+                  🍴 A Dinner and Breakfast <br>
+                  
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">2 Days</div>
+                  
+                </div>
+              </div>
+            </div>
+            
+            
+
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <img
+                src="img/Bilene.jpg"
+                alt="bilene"
+                width="500"
+                height="500"
+                class="t-card__img"
+                id="bilene"
+              />
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">Bilene</h3>
+                  
+                </div>
+
+                <div class="t-card__description">
+                  🚌Return Transportation From Maputo <br>
+                  🏨 Beach Front Accommodation <br>
+                  🍳 Breakfast And Dinner <br>
+                  🛥️ Boat Trip To Island <br> 
+                  🏃‍♂️ Walk On The Beach <br>
+                  🏍️ Jetski Or Motorcycle Tour <br>
+                  🗺️Tour Through The Village And 
+                  Tourist Attraction Destinations <br>
+                  🗣️ Tourism Guide <br>
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">3 Days</div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <img
+                src="img/Paraisod'ouro.jpg"
+                alt="ponta"
+                width="500"
+                height="500"
+                class="t-card__img"
+                id="ponta"
+              />
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">Ponta D'Ouro</h3>
+                  
+                </div>
+
+                <div class="t-card__description">
+                  
+                  🚌 Transportation Back From Maputo <br>
+                  🏨Accommodation In Front Of The Beach <br>
+                  🏊‍♂️ Sea View Pool <br>
+                  🍳 Breakfast And Dinner<br>
+                  🏍️ Motorcycle Tour <br>
+                  🗺️Village Tour And Tourist Attraction Destinations <br>
+                  🗣️ Tour Guide <br>
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">3 Days</div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <img
+                src="img/PARKNACIONAL.jpg"
+                alt="Maputo"
+                width="500"
+                height="500"
+                class="t-card__img"
+              />
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">MAPUTO NACIONAL PARK</h3>
+                  
+                </div>
+
+                <div class="t-card__description">
+                  🦁 Safari National Park Maputo <br>
+                  🚌 Return Transportation <br>
+                  🚗 Safari In An Open Vehicle <br>
+                  🍿 Snack Break In The Park <br>
+                  🗣️ Tourism Guide <br>
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">8 HOURS</div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <img
+                src="img/Visitavlk.jpg"
+                alt="Vilankulos"
+                width="500"
+                height="500"
+                class="t-card__img"
+                id="vilanculos"
+              />
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">VILANKULOS & BAZARUTO</h3>
+                  
+                </div>
+
+                <div class="t-card__description">
+                  🏖️ Visit To Vilankulos & Bazaruto <br>
+                  🚌 Return Transportation <br>
+                  📆 1 Day In Bazaruto <br>
+                  ⛴️ Boat Ride <br>
+                  🐴 Horse Ride <br>
+                  🍴 Meals <br>
+                  ☕️ Non-Alcoholic Drinks <br>
+                  🗣️ Tourism Guide <br>
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">3 Days</div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <img
+                src="img/VisitaZOO.jpg"
+                alt="namaacha"
+                width="500"
+                height="500"
+                class="t-card__img"
+                id="namaacha"
+              />
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">VISIT NAMAACHA</h3>
+                  
+                </div>
+
+                <div class="t-card__description">
+                  💧 Visit The Watterfalls And Zoo <br>
+                  🚌 Return Transportation <br>
+                  🍔 LUNCH <br>
+                  ☕️ Non-Alcoholic Beverages; <br>
+                  🎮 Games <br>
+                  🗣️ Tourism Guide<br>
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">9 HOURS</div>
+           
+
+                </div>
+
+                
+              </section>
+
+              <section>
+                <div class="marquee">
+                  <a href="rent_a_car.html"><span>Rent a car with Willana!</span></a>
+                </div>
+              </section>
+
+              <!-- SECTION TOURS -->
+              <section class="section-tours" id="tours">
+                <div class="container tour-box" data-aos="fade-up">
+                  <header class="tour-box__heading">
+                    <h2 class="heading heading--2 color-blue margin-bottom">
+                      Accommodations
+                    </h2>
+                    <p>
+                      In this section we offer accommodation options for various destinations in Mozambique, Swazladia, South Africa, ...
+                    </p>
+                  </header>
+        
+                  <article class="tour-box__cards">
+                    <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                      <img
+                        src="img/Mangalbeach.jpg"
+                        alt="VILANKULOS MANGAL"
+                        width="500"
+                        height="500"
+                        class="t-card__img"
+                      />
+        
+                      <div class="t-card__content">
+                        <div class="t-card__title">
+                          <h3 class="name">VILANKULOS MANGAL</h3>
+                          
+                        </div>
+        
+                        <div class="t-card__description">
+                          🏖️ Beachfront accommodation <br>
+                          🍳 Breakfast and Dinner <br>
+        
+                        </div>
+        
+                        <div class="t-card__items">
+                          <div class="days">2 Days</div>
+                          
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                      <img
+                        src="img/Bilenebclab.jpeg"
+                        alt="bilene"
+                        width="500"
+                        height="500"
+                        class="t-card__img"
+                      />
+        
+                      <div class="t-card__content">
+                        <div class="t-card__title">
+                          <h3 class="name">Bilene</h3>
+                          
+                        </div>
+        
+                        <div class="t-card__description">
+                          🏖️ Beachfront accommodation <br>
+                          🍳 Breakfast and Dinner <br>
+                        </div>
+        
+                        <div class="t-card__items">
+                          <div class="days">2 Days</div>
+                          
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                      <img
+                        src="img/Paraisod'ouro.jpg"
+                        alt="ponta"
+                        width="500"
+                        height="500"
+                        class="t-card__img"
+                      />
+        
+                      <div class="t-card__content">
+                        <div class="t-card__title">
+                          <h3 class="name">Ponta D'Ouro</h3>
+                          
+                        </div>
+        
+                        <div class="t-card__description">
+                          🏖️ Beachfront accommodation <br>
+                          🍳 Breakfast and Dinner <br>
+                        </div>
+        
+                        <div class="t-card__items">
+                          <div class="days">2 Days</div>
+                          
+                        </div>
+                    </section>
+
+                    <section>
+                      <div class="marquee">
+                        <a href="rent_a_car.html"><span>Rent a car with Willana!</span></a>
+                      </div>
+                    </section>
+                    
+                    <!-- SECTION TOURS -->
+                    <section class="section-tours" id="tours">
+                      <div class="container tour-box" data-aos="fade-up">
+                        <header class="tour-box__heading">
+                          <h2 class="heading heading--2 color-blue margin-bottom" id="offers">
+                            ACTIVITIES
+                          </h2>
+                          <p>
+                            In this session we offer some suggestions for activities to be carried out
+                          </p>
+                        </header>
+              
+                        <article class="tour-box__cards">
+                          <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                            <img
+                              src="img/motoact.jpg"
+                              alt="Quad bike"
+                              width="500"
+                              height="500"
+                              class="t-card__img"
+                            />
+              
+                            <div class="t-card__content">
+                              <div class="t-card__title">
+                                <h3 class="name">QUAD BIKE</h3>
+                                
+                              </div>
+              
+                              <div class="t-card__description">
+                                🚗 A Local Tour Using The Quad Bike, 
+                                  Or Stroll Along The Beach 🏖️
+                              </div>
+              
+                              <div class="t-card__items">
+                                <div class="days">1 Day</div>
+                                
+                              </div>
+                            </div>
+                          </div>
+              
+                          <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                            <img
+                              src="img/speedboat.jpg"
+                              alt="bilene"
+                              width="500"
+                              height="500"
+                              class="t-card__img"
+                            />
+              
+                            <div class="t-card__content">
+                              <div class="t-card__title">
+                                <h3 class="name">SPEEDBOAT</h3>
+                                
+                              </div>
+              
+                              <div class="t-card__description">
+                                ⚓️ An Adventure Trip On The Boat,
+                          To The Island, To Watch Dolphins 🐬 Depending On The Season And Location 📍
+                              </div>
+              
+                              <div class="t-card__items">
+                                <div class="days">1 Day</div>
+                                
+                              </div>
+                            </div>
+                          </div>
+              
+                          <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                            <img
+                              src="img/MERGULHO.png"
+                              alt="DIVE"
+                              width="500"
+                              height="500"
+                              class="t-card__img"
+                            />
+              
+                            <div class="t-card__content">
+                              <div class="t-card__title">
+                                <h3 class="name">DIVE</h3>
+                                
+                              </div>
+              
+                              <div class="t-card__description">
+                                ⚓️ Dive, Swim With Dolphins 🐬 
+                              </div>
+              
+                              <div class="t-card__items">
+                                <div class="days">5 HOURS</div>
+                                
+                              </div>
+                            </div>
+                          </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECTION OFFER 
+      <section class="section-offer" id="offers">
+        <div class="container offer-box">
+          <div class="offer-box__percentage" data-aos="zoom-in"></div>
+          <div class="offer-box__content" data-aos="fade-up">
+            
+          
+            
+          </div>
+        </div>
+      </section>-->
+
+      <!-- SECTION REVIEW -->
+      <section class="section-review">
+        <div class="container review-box" data-aos="fade-up">
+          <header class="review-header">
+            <h3 class="color-blue">Our Reviews</h3>
+            <h2 class="heading heading--2">What the people say about us</h2>
+          </header>
+
+          <article class="review-cards">
+            <div class="r-card">
+              <img
+                src="img/Franciscojr.png"
+                alt=""
+                class="r-card__img"
+                width="90"
+                height="90"
+              />
+              <div class="r-card__name">Francisco Junior</div>
+              <!--<span class="quot">&#8223;</span>-->
+              <div class="r-card__description">
+                "Amazing experience! The team was professional, and every detail was carefully planned. We enjoyed the entire trip, from the transportation to the guided tours. Highly recommend!"
+              </div>
+              <div class="r-card__rating">
+                <img
+                  src="img/star-grp.svg"
+                  alt="star"
+                  width="100"
+                  height="30"
+                />
+              </div>
+            </div>
+
+            <div class="r-card">
+              <img
+                src="img/Owner2.jpg"
+                alt=""
+                class="r-card__img"
+                width="90"
+                height="90"
+              />
+              <div class="r-card__name">ANA</div>
+              <!--<span class="quot">&#8223;</span>-->
+              <div class="r-card__description">
+                "This was our first time booking a group tour in Mozambique, and it exceeded our expectations! The transportation was comfortable, the hotels were excellent, and we loved the attention to detail."
+              </div>
+              <div class="r-card__rating">
+                <img
+                  src="img/star-grp.svg"
+                  alt="star"
+                  width="100"
+                  height="30"
+                />
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- SECTION FOOTER -->
+    <footer class="section-footer">
+      <div class="footer-box container">
+        <div class="contact-details">
+          <h2 class="heading heading--2 margin-bottom">Willana</h2>
+          <ul class="contact-data">
+            <li class="location">Maputo - Moçambique</li>
+            <li class="phone">+258 87 464 0712</li>
+            <li class="email">willanaacommodation@gmail.com</li>
+            <li class="social">
+              <a href="https://wa.me/message/BUOAB64XHKPTE1">
+                <img
+                  src="./img/logo-whatsapp.svg"
+                  alt="whatsapp icon"
+                  width="35"
+                  height="35"
+                />
+              </a>
+              
+              <a href="https://www.facebook.com/people/Willana-accommodations/100086420891786/?locale=th_TH&paipv=0&eav=Afa-ooprIAgnEGbJDf_i_QaPr8UHUOOYgJ83e926jnAY3n_s9IGEfYkodBt8SF2Of8M&_rdr">
+                <img
+                    src="./img/logo-facebook.svg"
+                    alt="facebook icon"
+                    width="35"
+                    height="35"
+                  />
+              </a>
+              
+              <a href="https://www.instagram.com/willana_accommodations/">
+                 <img
+                  src="./img/logo-instagram.svg"
+                  alt="instagram icon"
+                  width="35"
+                  height="35"
+                />
+              </a>
+
+            </li>
+          </ul>
+        </div>
+
+        <nav class="footer-nav" aria-label="navigation">
+          <div class="nav-name">Quick Links</div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tours">Tours</a></li>
+            <li><a href="#offers">Offeres</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-nav" aria-label="navigation">
+          <div class="nav-name">Popular Destination</div>
+          <ul>
+            <li><a href="#kruger">Kruger Park SA</a></li>
+            <li><a href="#bilene">Bilene</a></li>
+            <li><a href="#ponta">Ponta D'Ouro</a></li>
+            <li><a href="#vilanculos">Vilanculos</a></li>
+            <li><a href="#namaacha">Namaacha</a></li>
+          </ul>
+        </nav>
+
+        <!-- <div class="newsletter">
+          <div class="newsletter__title">News Letter</div>
+          <div class="newsletter__text">
+            Welcome to Willana Accommodations and Tourism. We are a tourism agency dedicated to creating unforgettable experiences. We offer tourist tours, personalized excursions, transport services, accommodation. Our activities include boat trips, motorbikes, diving with dolphins. We also organize beach weddings, special events and travel packages for medical appointments.!
+          </div>
+         <form class="newsletter__input">
+            <input type="text" placeholder="example@domine.com" />
+            <img
+              src="./img/send.svg"
+              alt="send icon"
+              class="send-icon"
+              width="36"
+              height="36"
+            />
+          </form>-->
+        </div>
+
+        <div class="legel">
+          <p class="text">Copyright &copy; by willana-acommodations&nbsp;</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const navList = document.querySelector('.nav-list');
+        navList.classList.toggle('show');
+      }
+    
+      function toggleDropdown() {
+        const dropdown = document.querySelector('.dropdown');
+        dropdown.classList.toggle('show');
+      }
+    
+      function redirectUser() {
+        const selectedOption = document.querySelector('input[name="booking-option"]:checked');
+        if (selectedOption) {
+          const value = selectedOption.value;
+          let url = '';
+          if (value === 'whatsapp') {
+            url = 'https://wa.me/message/BUOAB64XHKPTE1';
+          } else if (value === 'instagram') {
+            url = 'https://www.instagram.com/willana_accommodations/';
+          } else if (value === 'form') {
+            url = 'Contacto1.html';
+          }
+          window.location.href = url;
+        } else {
+          alert('Por favor, selecione uma opção.');
+        }
+      }
+    </script>
+    
+    
+  </body>
+</html>

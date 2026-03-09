@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willana - Rent a Car</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/willana-logo.jpg" />
+    <link rel="stylesheet" href="font/stylesheet.css" media="screen" />
+    <link rel="stylesheet" href="css/style.css" media="screen" />
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+          <div class="navigation">
+            <a href="">
+              <div class="logo">
+                <img src="img/logo-willana.png" alt="logotipo" width="100" height="50">
+              </div>
+            </a>
+            <img
+              src="img/nav-icon.svg"
+              class="nav-icon"
+              alt="navigation icon"
+              width="30"
+              height="30"
+              onclick="toggleMenu()"
+            />
+            <ul class="nav-list">
+              <li>
+                <a href="index.html"> Home </a>
+              </li>
+              <li>
+                <a href="#about"> About </a>
+              </li>
+              <li>
+                <a href="#rent"> Rent </a>
+              </li>
+              
+              <li>
+                <button class="btn" onclick="toggleDropdown()">Book Now</button>
+                <div class="dropdown">
+                  <label>
+                    <input type="radio" name="booking-option" value="whatsapp">
+                    WhatsApp
+                  </label>
+                  <label>
+                    <input type="radio" name="booking-option" value="instagram">
+                    Instagram
+                  </label>
+                  <label>
+                    <input type="radio" name="booking-option" value="form">
+                    Form
+                  </label>
+                  <button class="btn" onclick="redirectUser()">OK</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <main>
+
+        <section class="section-hero2">
+            <div class="container">
+              <div class="hero-content">
+                <h1 class="heading heading--1 margin-bottom">
+                  life is short and world is wide the sooner you start exploring it
+                  the better
+                </h1>
+                <button class="btn"><a href="#rent" style="text-decoration: none; color:black;">Explore now</a></button>
+              </div>
+            </div>
+          </section>
+
+          <!-- SECTION ABOUT -->
+            <section class="section-about" id="about">
+                <div class="container about-box" data-aos="fade-up">
+                <div class="about-box__heading">
+                    <h3 class="color-blue margin-bottom">About us</h3>
+                    <div class="heading heading--1 capitalize">
+                    Welcome to our vehicle  rental and transportation service catalog. we offer 
+                    personalized solutions to meet your needs, including:
+                    </div>
+                </div>
+                <div class="about-box__content">
+                    <p class="margin-bottom">
+                        <ul>
+                            <li>Passager Transport for Events</li>
+                            <li>Vehicle Delivery Services</li>
+                            <li>Employee Transportation</li>
+                            <li>Special Vehicle Rental</li>
+                            <li>Goods Transportations</li>                            
+                            <li>Customized Car Rental</li>
+                            <li>Feet Vehicle Rental</li>     
+                            <li>Tourism Car Rental</li>
+                            <li>Storage Services</li>
+                            <li>Employee Pickup</li>
+                            
+                        </ol>
+                    </p>
+                    <a href="#rent"><button class="btn btn--secondary">Read More</button></a>
+                </div>
+                </div>
+            </section>
+            
+            <!-- SECTION TOURS -->
+            <section class="section-tours" id="rent">
+              <div class="container tour-box" data-aos="fade-up">
+                <header class="tour-box__heading">
+                  <h2 class="heading heading--2 color-blue margin-bottom" id="cars">
+                    Check Our Cars
+                  </h2>
+                  
+                </header>
+      
+                <article class="tour-box__cards">
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/ractis.jpg"
+                      alt="toyota ractis"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="ractis"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title2">
+                        <h3 class="name">Toyota Ractis</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p> 5 seats</p>
+                        <p>3.000 mzn - City</p>
+                        <p>4.000 mzn - Travel</p>
+
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+      
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/ractis2.jpg"
+                      alt="toyota ractis"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="ractis2"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">Toyota Ractis</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>5 seats</p>
+                        <p>3.300 mzn - City</p>
+                        <p>4.500 mzn - Travel</p>
+                        <p></p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/sienta.jpg"
+                      alt="toyota sienta"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="sienta"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">Toyota Sienta</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>5 seats</p>
+                        <p>3.000 mzn - City</p>
+                        <p>4.000 mzn - Travel</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/allion.jpg"
+                      alt="Maputo"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">Toyota Allion</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>5 seats</p>
+                        <p>3.000 mzn - City</p>
+                        <p>4.000 mzn - Travel</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/mark x.jpg"
+                      alt="toyota mark x"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="marcx"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">Toyota Mark X</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>5 seats</p>
+                        <p>4.000 mzn - City</p>
+                        <p>5.000 mzn - Travel</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/vanguard.jpg"
+                      alt="toyota vanguard"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="vanguard"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">Toyota Vanguard</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>5 Seats</p>
+                        <p>5.000 mzn - City</p>
+                        <p>6.500 mzn - Travel</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">9 HOURS</div>                      
+                      </div>
+                    </div>
+                </div>
+
+                <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/alphard.jpg"
+                      alt="toyota alphard"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="alphard"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">Toyota Alphard</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>8 seats</p>
+                        <p>6.500 mzn - City</p>
+                        <p>8.000 mzn - Travel</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/vellfire.jpg"
+                      alt="toyota vellfire"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="vellfire"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">Toyota Vellfire</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>7 seats</p>
+                        <p>9.500 mzn - City</p>
+                        <p>11.500 mzn - Travel</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/toyota coaster.jpg"
+                      alt="toyota coaster"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="coaster"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">Toyota Coaster</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>29 seats</p>
+                        <p>12.000 mzn - City</p>
+                        <p>19.000 mzn - Travel</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/hilux gd6.jpg"
+                      alt="toyota gd6"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="gd6"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">Toyota Hilux GD6</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>5 seats</p>
+                        <p>12.000 mzn - City</p>
+                        <p>15.000 mzn - Travel</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/prado 7 lugares.jpg"
+                      alt="toyota prado"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="prado"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">Toyota Prado</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>7 seats</p>
+                        <p>7.500 mzn - City</p>
+                        <p>9.000 mzn - Travel</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/prado.jpg"
+                      alt="toyota prado"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="prado"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">Toyota Prado</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>7 seats</p>
+                        <p>15.000 mzn - City</p>
+                        <p>18.000 mzn - Travel</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/prado 8 lugares.jpg"
+                      alt="toyota prado"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="prado"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">Toyota Prado</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>8 seats</p>
+                        <p>18.000 mzn - City</p>
+                        <p>25.000 mzn - Travel</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/mark x.jpg"
+                      alt="toyota mark x"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="marcx"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">Toyota Legend45 2.8 D4D</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>5 seats</p>
+                        <p>8.000 mzn - City</p>
+                        <p>10.000 mzn - Travel</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/mercedes benz c200.jpg"
+                      alt="mercedes c200"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="mercedes"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">Mercedes Benz C200 2010</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>5 seats</p>
+                        <p>8.000 mzn - City</p>
+                        <p>10.000 mzn - Travel</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/fortuner gd6.jpg"
+                      alt="toyota fortuner"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="fortuner"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">Toyota Fortuner GD6</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>8 seats</p>
+                        <p>14.000 mzn - City</p>
+                        <p>17.000 mzn - Travel</p>
+                        <p>15.000 mzn - wedding</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/fortuner.jpg"
+                      alt="toyota fortuner"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="fortuner"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">Toyota Fortuner</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>5 seats</p>
+                        <p>8.500 mzn - City</p>
+                        <p>9.500 mzn - Travel</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/range rover sport.jpg"
+                      alt="range rover"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="range"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">Range Rover Sport</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>5 seats</p>
+                        <p>20.000 mzn - Particular</p>
+                        <p>25.000 mzn - wedding</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/bmw 530.jpg"
+                      alt="bmw 530"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="bmw"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">BMW 530</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>5 seats</p>
+                        <p>13.000 mzn - Particular</p>
+                        <p>15.000 mzn - wedding</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/mercedes e250.jpg"
+                      alt="mercedes"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="mercedes"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">Mercedes Benz E250 2015</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>5 seats</p>
+                        <p>16.800 mzn - Particular</p>
+                        <p>18.000 mzn - wedding</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/jeep grand cherokee.jpg"
+                      alt="Grand cherokee"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="jeep"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">Jeep Grand Cherokee</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>5 seats</p>
+                        <p>16.000 mzn - City</p>
+                        <p>19.000 mzn - Travel</p>
+                        <p>22.000 mzn - wedding</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/quantum.jpg"
+                      alt="toyota quantum"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="quantum"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">Toyota Quantum</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>15 seats</p>
+                        <p>8.000 mzn - Particular</p>
+                        <p>10.000 mzn - Travel</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/lexus lx 570.jpg"
+                      alt="lexus"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="lexus"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">Lexus LX 570</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>8 seats</p>
+                        <p>35.000 mzn - Particular</p>
+                        <p>30.000 mzn - wedding</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/range rover vogue.jpg"
+                      alt="range rover vogue"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="vogue"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">Range Rover Vogue</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>5 seats</p>
+                        <p>30.000 mzn - Particular</p>
+                        <p>35.000 mzn - wedding</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/mercedes ml.jpg"
+                      alt="mercedes ml"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="ml"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">Mercedes ML</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>5 seats</p>
+                        <p>18.000 mzn - Particular</p>
+                        <p>20.000 mzn - wedding</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/bmw 320.jpg"
+                      alt="bmw 320 2017"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="bmw"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">BMW 320 2017</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>5 seats</p>
+                        <p>13.000 mzn - Particular</p>
+                        <p>15.000 mzn - wedding</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/range rover velar.jpg"
+                      alt="range rover velar"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="velar"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">Range Rover Velar</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>5 seats</p>
+                        <p>25.000 mzn - Particular</p>
+                        <p>29.000 mzn - Wedding</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/range rover.jpg"
+                      alt="range rover"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="range"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">Range Rover</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>5 seats</p>
+                        <p>20.000 mzn - Particular</p>
+                        <p>28.000 mzn - Wedding</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/hummer limousine.jpg"
+                      alt="hummerlimousine"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="hummer"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">HUMMER Limousine</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>90.000 mzn - Wedding</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/chrysler limousine.jpg"
+                      alt="chrystler limousine"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="limousine"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">Chrysler Limousine</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>80.000 mzn - Wedding</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/mercedes antigo.jpg"
+                      alt="old mercedes"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="mercedes"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">OLD Mercedes</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>60.000 mzn - Wedding</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/mercedes antigo 2.jpg"
+                      alt="OLD mercedes"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="mercedes"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">OLD Mercedes</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>60.000 mzn - Wedding</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img
+                      src="img/rent_a_car/mercedes old.jpg"
+                      alt="mercedes old"
+                      width="500"
+                      height="500"
+                      class="t-card__img"
+                      id="mercedes"
+                    />
+      
+                    <div class="t-card__content">
+                      <div class="t-card__title">
+                        <h3 class="name">OLD Mercedes</h3>
+                        <p class="price"></p>
+                      </div>
+      
+                      <div class="t-card__description">
+                        <p>35.000 mzn - Wedding</p>
+                      </div>
+      
+                      <div class="t-card__items">
+                        <div class="days">24h</div>
+                        
+                      </div>
+                    </div>
+                  </div> 
+                    
+            </section>
+            <section>
+                <div class="tour-box__heading">
+                    <a href="img/rent_a_car/catalogo.pdf" download>
+                        <h2 class="heading heading--2 color-blue margin-bottom">
+                             Click Here To Download Our catalog
+                        </h2>
+                    </a>
+                                        
+                </div>
+            </section>
+            
+
+
+
+      </main>
+
+      
+      <footer class="footer-text">
+        <div class="text">
+            <p>Willana-Accommodations</p>
+        </div>
+     </footer>
+      
+
+
+
+      <script>
+        function toggleMenu() {
+          const navList = document.querySelector('.nav-list');
+          navList.classList.toggle('show');
+        }
+      
+        function toggleDropdown() {
+          const dropdown = document.querySelector('.dropdown');
+          dropdown.classList.toggle('show');
+        }
+      
+        function redirectUser() {
+          const selectedOption = document.querySelector('input[name="booking-option"]:checked');
+          if (selectedOption) {
+            const value = selectedOption.value;
+            let url = '';
+            if (value === 'whatsapp') {
+              url = 'https://wa.me/message/BUOAB64XHKPTE1';
+            } else if (value === 'instagram') {
+              url = 'https://www.instagram.com/willana_accommodations/';
+            } else if (value === 'form') {
+              url = 'Contacto1.html';
+            }
+            window.location.href = url;
+          } else {
+            alert('Por favor, selecione uma opção.');
+          }
+        }
+      </script>
+
+</body>
+</html>
